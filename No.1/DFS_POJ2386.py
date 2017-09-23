@@ -17,10 +17,11 @@ input_arr = [
     '.W.W......W.',
     '..W.......W.'
     ]
-arr = [ [] for i in range(len(input_arr))]
-for i in range(len(input_arr)):
-    for j in range(len(input_arr[i])):
-        arr[i].append(str(input_arr[i][j]))
+# arr = [ [] for i in range(len(input_arr))]
+# for i in range(len(input_arr)):
+#     for j in range(len(input_arr[i])):
+#         arr[i].append(str(input_arr[i][j]))
+arr = [ list(input_arr[x]) for x in range(len(input_arr))]
 
 def DFS(i, j):
     arr[i][j] = '.'
